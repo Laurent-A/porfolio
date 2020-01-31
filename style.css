@@ -273,11 +273,11 @@ p{
       height: 60px;
       background: #000;  
     }
-    .ear__left{
+    .bear__ears__left{
       -webkit-border-radius:50% 100%;
               border-radius:50% 100%;
     }
-    .ear__right{
+    .bear__ears__right{
       -webkit-border-radius:100% 50%;
               border-radius:100% 50%;
     }
