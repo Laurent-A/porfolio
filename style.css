@@ -96,7 +96,6 @@ header{
 
   /*COMPETENCE*/
 
-
 *:active, *:focus{
 	outline: none;
 }
@@ -107,12 +106,11 @@ html, body{
 
 .scrollAnim{
 	height: 100%;
-	
 	opacity: 0;
 	transition: 0.8s;
-	
 	padding: 0 120px;
 }
+
 .scrollAnim:nth-child(2){
 	background: #e3e4e5;
 }
@@ -124,13 +122,11 @@ html, body{
 }
 .scrollAnim .content{
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 5%;
-	
 }
 
 
@@ -210,8 +206,53 @@ p{
 
 /* SECTION COMPETENCE*/
 
+.competence {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.competenceTopic{
+  margin-top:2em;
+  width:30%;
+}
+
+.topic h1{
+  margin-top:2em;
+}
+
+.competenceTopic h2 {
+  padding-bottom :1em;
+  text-align: center;
+  border-bottom : 1px solid black;
+}
+.competenceTopic p {
+  padding-top :1em;
+  text-align: center;
+}
 
 
+.competenceNav{
+  padding-top :4em;
+  width : 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.competenceNav ul{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+}
+
+.competenceNav p {
+  padding-left: 2em;
+  
+}
+
+
+/*OURS*/
 .container{
     display: -webkit-box;
     display: -webkit-flex;
