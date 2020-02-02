@@ -96,10 +96,7 @@ header{
 
   /*COMPETENCE*/
 
-  *{
-	font-family: "Quicksand", sans-serif;
-	color: #ddd;
-}
+
 *:active, *:focus{
 	outline: none;
 }
@@ -107,7 +104,6 @@ header{
 html, body{
 	height: 100%;
 }
-
 
 .scrollAnim{
 	height: 100%;
@@ -214,18 +210,7 @@ p{
 
 /* SECTION COMPETENCE*/
 
-#competence{
-	display: flex;
-	flex-direction: row;
-}
 
-.sujet{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-left: 10%;
-}
 
 .container{
     display: -webkit-box;
