@@ -172,3 +172,8 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas, false);
 
+// COORDONEE
+
+function envoyer() {
+  alert("votre message est bien parti")
+}

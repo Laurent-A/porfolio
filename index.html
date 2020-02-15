@@ -93,9 +93,7 @@
 
 <!--SECTION CREATION-->
 <div class="scrollAnim " id="creation">
-	<div class="titleCreation">
-    <h1 class="anim-left">Mes créations</h1>
-  </div>
+	
   <div class="contentItemCreation">
     <div class="itemCreation">
       <h2 class="anim-top">Les sites</h2>
@@ -106,8 +104,6 @@
           <figure><img src="./images/img2.jpg" alt=""></figure>
           <figure><img src="./images/img3.jpg" alt=""></figure>
           <figure><img src="./images/img4.jpg" alt=""></figure>
-          <figure><img src="./images/img1.jpg" alt=""></figure>
-
         </div>
       </div>
 
@@ -137,10 +133,10 @@
   </div>
 
     
-    <div class="competenceNav">
+    <div class="creationNav">
       <ul >
         <li><a href="#particles-js"><p class="anim-top">Accueil</p></a></li>
-        <li><a href="#creation"><p class="anim-top">Créations</p></a></li>
+        <li><a href="#competence"><p class="anim-top">Compétences</p></a></li>
         <li><a href="#coordonnees"><p class="anim-top">Coordonnées</p></a></li>
       </ul>  
     </div>
@@ -150,10 +146,31 @@
 <!--SECTION coordonnées-->
 <div class="scrollAnim" id="coordonnees">
 	<div class="content">
-		<h2 class="anim-left">LOREM IPSUM</h2>
-		<p class="anim-top">[ Mauris feugiat magna eget odio ornare, at hendrerit diam mollis. Donec mollis dapibus odio fringilla ornare. Aliquam imperdiet velit sed tortor imperdiet, eu blandit dui facilisis. Morbi mattis eros vel tempus hendrerit. Phasellus posuere purus a consequat suscipit. Ut interdum placerat sagittis. In sagittis, ante ac luctus lacinia, mauris metus maximus neque, eget lobortis lectus risus eget nibh. ]
-		</p>
-	</div>
+   <div class="titleCoord">
+      <h1 class="anim-left">Contact</h1>
+  </div>
+		<div class="contactBodyCoord">   
+    <div class="wrapperCoord">
+      <form class="form">
+        <input type="text" class="name entry " placeholder="Votre nom"/>
+        <input type="text" class="email entry" placeholder="Email"/>
+        
+        <textarea class="message entry" placeholder="Message"></textarea> 
+        
+        <button class="submit entry" onclick="envoyer()">Submit</button>
+      </form>  
+      
+      <div class="shadow"></div>
+
+      <div class="coordNav">
+        <ul >
+          <li><a href="#particles-js"><p class="anim-top">Accueil</p></a></li>
+          <li><a href="#competence"><p class="anim-top">Compétences</p></a></li>
+          <li><a href="#creation"><p class="anim-top">Créations</p></a></li>
+        </ul>  
+      </div>
+    </div>
+  </div>
 </div>
 <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
