@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Laurent ARNOUX</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <script src="https://kit.fontawesome.com/9a95da0a57.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="particles-js"></div>
@@ -48,29 +50,29 @@
     </header>   
 
     
-<div class="scrollAnim anim">
+<div class="scrollAnim anim vide">
 	<div class="content"></div>
 </div>
 <!--SECTION COMPETENCE-->
 
 <div class="scrollAnim anim" id="competence">
   <div class="content topic">
-    <h1 class="anim-left">Compétences</h1>
+    <h1 class="hun anim-left">Compétences</h1>
   </div>
   <div class="competence">
     <div class="competenceTopic">
-        <h2 class="anim-left">Concept</h2>
-        <p class="anim-top">j'aime traduire les idées en une stratégie en ligne avec une approche orientée vers le groupe cible. Avec une passion axée sur la perspicacité, je combine la conception, la technologie, le marketing et les perspectives entrepreneuriales dans un concept fort ou une stratégie à long terme.
+        <h2 class="hdeux anim-left">Concept</h2>
+        <p class="hp anim-top">j'aime traduire les idées en une stratégie en ligne avec une approche orientée vers le groupe cible. Avec une passion axée sur la perspicacité, je combine la conception, la technologie, le marketing et les perspectives entrepreneuriales dans un concept fort ou une stratégie à long terme.
         </p>
     </div>
     <div class="competenceTopic">
-        <h2 class="anim-left">Développement</h2>
-        <p class="anim-left">Le moteur de tout ce qui est beau, créatif et fonctionnel. Techniques évolutives, défis complexes, liens compliqués. Du site Web, de la boutique en ligne à l'application SaaS. je peux également construire ce que vous pensez. Avec une personnalisation approfondie, une flexibilité et une programmation modulaire. Tout en atteignant pour vous, votre entreprises, des objectifs ambitieux.
+        <h2 class="hdeux anim-left">Développement</h2>
+        <p class="hp anim-left">Le moteur de tout ce qui est beau, créatif et fonctionnel. Techniques évolutives, défis complexes, liens compliqués. Du site Web, de la boutique en ligne à l'application SaaS. je peux également construire ce que vous pensez. Avec une personnalisation approfondie, une flexibilité et une programmation modulaire. Tout en atteignant pour vous, votre entreprises, des objectifs ambitieux.
         </p>
     </div>
     <div class="competenceTopic">
-        <h2 class="anim-left">Design</h2>
-        <p class="anim-top">Le design est profondément enraciné dans mon ADN. Des idées conceptuelles approximatives que j'aime rendre visuelles. Ce faisant, je m'assure que ce que je construis techniquement est vraiment beau, bien pensé et fonctionne bien. Ce que je fais doit avoir une expérience. 
+        <h2 class="hdeux anim-left">Design</h2>
+        <p class="hp anim-top">Le design est profondément enraciné dans mon ADN. Des idées conceptuelles approximatives que j'aime rendre visuelles. Ce faisant, je m'assure que ce que je construis techniquement est vraiment beau, bien pensé et fonctionne bien. Ce que je fais doit avoir une expérience. 
         </p>
     </div>
   </div>
@@ -81,9 +83,9 @@
     
     <div class="competenceNav">
       <ul >
-        <li><a href="#particles-js"><p class="anim-top">Accueil</p></a></li>
-        <li><a href="#creation"><p class="anim-top">Créations</p></a></li>
-        <li><a href="#coordonnees"><p class="anim-top">Coordonnées</p></a></li>
+        <li><a href="#particles-js"><p class="hp anim-top">Accueil</p></a></li>
+        <li><a href="#creation"><p class="hp anim-top">Créations</p></a></li>
+        <li><a href="#coordonnees"><p class="hp anim-top">Coordonnées</p></a></li>
       </ul>  
     </div>
   </div>
@@ -92,22 +94,40 @@
 
 
 <!--SECTION CREATION-->
-<div class="scrollAnim " id="creation">
+<div class="scrollAnim vide" id="creation">
 	
   <div class="contentItemCreation">
     <div class="itemCreation">
-      <h2 class="anim-top">Les sites</h2>
+      <div class="titleCreation">
+        <h1 class="hun anim-top">Les sites</h1>
+      </div>
       
-      <div class="itemCreationContainer">
-        <div id="carousel">
-          <figure><img src="./images/img1.jpg" alt=""></figure>
-          <figure><img src="./images/img2.jpg" alt=""></figure>
-          <figure><img src="./images/img3.jpg" alt=""></figure>
-          <figure><img src="./images/img4.jpg" alt=""></figure>
+      <div class="carrousel">
+        <div class="items">
+            <div class="item active ">
+              <img src="./images/img1.jpg">
+              <p>test1</p>
+            </div>
+            <div class=" item next">
+              <img src="./images/img2.jpg">
+            </div>
+            <div class="item">
+              <img src="./images/img3.jpg">
+            </div>
+            <div class="item">
+              <img src="./images/img4.jpg">
+            </div>
+            <div class="item prev">
+              <img src="./images/img4.jpg">
+            </div>
+            <div class="button-container">
+              <div class="button"><i class="fas fa-angle-left"></i></div>
+              <div class="button"><i class="fas fa-angle-right"></i></div>
+            </div>
         </div>
       </div>
-
-    
+      
+      
     </div>
     <!--bear-->
     <div class="itemCreation">
@@ -135,9 +155,9 @@
     
     <div class="creationNav">
       <ul >
-        <li><a href="#particles-js"><p class="anim-top">Accueil</p></a></li>
-        <li><a href="#competence"><p class="anim-top">Compétences</p></a></li>
-        <li><a href="#coordonnees"><p class="anim-top">Coordonnées</p></a></li>
+        <li><a href="#particles-js"><p class="hp anim-top">Accueil</p></a></li>
+        <li><a href="#competence"><p class="hp anim-top">Compétences</p></a></li>
+        <li><a href="#coordonnees"><p class="hp anim-top">Coordonnées</p></a></li>
       </ul>  
     </div>
 
@@ -145,32 +165,59 @@
 
 <!--SECTION coordonnées-->
 <div class="scrollAnim" id="coordonnees">
-	<div class="content">
-   <div class="titleCoord">
-      <h1 class="anim-left">Contact</h1>
-  </div>
-		<div class="contactBodyCoord">   
-    <div class="wrapperCoord">
-      <form class="form">
-        <input type="text" class="name entry " placeholder="Votre nom"/>
-        <input type="text" class="email entry" placeholder="Email"/>
-        
-        <textarea class="message entry" placeholder="Message"></textarea> 
-        
-        <button class="submit entry" onclick="envoyer()">Submit</button>
-      </form>  
-      
-      <div class="shadow"></div>
+
+
+    <div class="contactBodyCoord">
+    
+      <div class="contactFirstSeconditem">
+
+        <div class="titleCoord">
+          <h1 class="hun anim-left">Contact</h1>
+          <div class="profil">
+
+            <div class="imageProfil">
+              <img src="./images/profil.jpg">
+            </div>
+
+            <div class="contactProfil">
+              <ul>
+                <li>Laurent ARNOUX</li>
+                <li>Tel : 06 72 73 65 32</li>
+                <li><a href="mailto:l.arnoux60@gmail.com">Mail : l.arnoux60@gmail.com</a></li>
+                <li>localisation : bordeaux, France</li>
+              </ul>
+
+              <p><a href="mailto:l.arnoux60@gmail.com">Me contacter directement par mail</a></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="wrapperCoord">
+          <form class="form">
+            <input type="text" class="name entry " placeholder="Votre nom"/>
+            <input type="text" class="email entry" placeholder="Votre Email"/>
+            
+            <textarea class="message entry" placeholder="Votre Message"></textarea> 
+            
+            <button class="submit entry" onclick="envoyer()">Submit</button>
+          </form>  
+          <div class="shadow"></div>
+        </div>
+
+      </div>
 
       <div class="coordNav">
-        <ul >
-          <li><a href="#particles-js"><p class="anim-top">Accueil</p></a></li>
-          <li><a href="#competence"><p class="anim-top">Compétences</p></a></li>
-          <li><a href="#creation"><p class="anim-top">Créations</p></a></li>
+        <ul>
+          <li><a href="#particles-js"><p class="hp anim-top">Accueil</p></a></li>
+          <li><a href="#competence"><p class="hp anim-top">Compétences</p></a></li>
+          <li><a href="#creation"><p class="hp anim-top">Créations</p></a></li>
         </ul>  
       </div>
+
     </div>
-  </div>
+    
+
+  
 </div>
 <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -185,3 +232,14 @@ crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
 </html>
+
+<!--
+  <div class="itemCreationContainer">
+        <div id="carousel">
+          <figure><img src="./images/img1.jpg" alt=""></figure>
+          <figure><img src="./images/img2.jpg" alt=""></figure>
+          <figure><img src="./images/img3.jpg" alt=""></figure>
+          <figure><img src="./images/img4.jpg" alt=""></figure>
+        </div>
+      </div>
+-->

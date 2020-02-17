@@ -86,7 +86,7 @@ $('a[href*="#"]')
       event.preventDefault();
       $('html, body').animate({
         scrollTop: target.offset().top
-      }, 1000, function() {
+      }, 2000, function() {
         // Callback after animation
         // Must change focus!
         var $target = $(target);
@@ -157,7 +157,7 @@ function bubble() {
 
 // Draw
 function draw() {
-  bubble();
+  //bubble();
   window.requestAnimationFrame(draw);
 }
 
@@ -177,3 +177,44 @@ window.addEventListener('resize', resizeCanvas, false);
 function envoyer() {
   alert("votre message est bien parti")
 }
+
+// CAROUSEL
+const slider = document.querySelector(".items");
+		const slides = document.querySelectorAll(".item");
+		const button = document.querySelectorAll(".button");
+
+		let current = 0;
+		let prev = 4;
+		let next = 1;
+
+		for (let i = 0; i < button.length; i++) {
+			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+		}
+
+		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+		const gotoNum = number => {
+			current = number;
+			prev = current - 1;
+			next = current + 1;
+
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].classList.remove("active");
+				slides[i].classList.remove("prev");
+				slides[i].classList.remove("next");
+			}
+
+			if (next == 5) {
+				next = 0;
+			}
+
+			if (prev == -1) {
+				prev = 4;
+			}
+
+			slides[current].classList.add("active");
+			slides[prev].classList.add("prev");
+			slides[next].classList.add("next");
+		}
