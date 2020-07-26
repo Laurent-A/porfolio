@@ -110,7 +110,7 @@ html, body{
 }
 
 .scrollAnim{
-	height: 120%;
+	height: 100%;
 	opacity: 0;
 	transition: 0.8s;
 }
