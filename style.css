@@ -44,6 +44,14 @@
   color: white;
 }
 
+.menuItem{
+  color:white;
+}
+
+.menuItem:hover{
+  color:white;
+}
+
 /*COMPETENCE*/
 
 *:active,
@@ -108,11 +116,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
+  position: absolute;
   color: white;
   width: 100%;
   margin-top: 2em;
   font-family: "Barlow", sans-serif;
+  bottom:0;
+  width:100%;
 }
 
 .footer ul {
@@ -126,7 +136,26 @@ body {
 
 .footer a {
   color: white;
+  text-decoration: none;
 }
+
+.legale a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.iconLink {
+  color: white;
+  filter: blur(1px);
+}
+
+.iconLink:hover {
+  color: white;
+  filter: blur(0px);
+}
+
+
 
 @media (min-width: 768px) and (max-width: 1283px) {
   #particles-js {

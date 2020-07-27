@@ -64,14 +64,7 @@ stats.domElement.style.top =
 document.body.appendChild(stats.domElement); 
 count_particles = document.querySelector('.js-count-particles'); */
   update = function () {
-    stats.begin();
-    stats.end();
-    if (
-      window.pJSDom[0].pJS.particles &&
-      window.pJSDom[0].pJS.particles.array
-    ) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
+    
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
@@ -82,7 +75,6 @@ particleNavBar();
 /*titre*/
 // Wrap every letter in a span
 var textWrapper = document.querySelector(".ml3");
-console.log(textWrapper);
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
   "<span class='letter'>$&</span>"
