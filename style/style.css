@@ -147,12 +147,10 @@ body {
 
 .iconLink {
   color: white;
-  filter: blur(1px);
 }
 
 .iconLink:hover {
-  color: white;
-  filter: blur(0px);
+  color: grey;
 }
 
 
@@ -186,10 +184,17 @@ body {
     width: 100%;
   }
 
+  .last {
+    margin-bottom: 3em;
+  }
+
   .footer {
     background-color: black;
     margin-top: 0.25em;
     padding-top: 1em;
+    bottom:0;
+    width:100%;
+    position: fixed;
   }
 }
 
@@ -230,5 +235,12 @@ body {
     background-color: black;
     margin-top: 0.25em;
     padding-top: 1em;
+    bottom:0;
+    width:100%;
+    position: fixed;
+  }
+
+  .last {
+    margin-bottom: 3em;
   }
 }

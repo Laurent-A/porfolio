@@ -33,151 +33,68 @@ body{
 
   /*CARROUSEl*/
 
-  /* You can remove this page div in your website */
-#page{
-    width:100%;
-    height:100%;
-    position:absolute;
-    background:black;
+  #carousel { 
+    perspective: 1200px; 
+    background: black; 
+    margin-top: 5%; 
+    font-size:0; 
+    overflow: hidden; 
   }
-  /* Our normalize css */
-  *{
-    margin:0;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  #spinner { 
+    transform-style: preserve-3d; 
+    height: 300px; 
+    transform-origin: 50% 50% -500px; 
+    transition: 1s; 
+  } 
+  #spinner img { 
+    width: 40%; max-width: 425px; 
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent; 
   }
-  
-  /* Our wrapper */
-  .wrapper{
-    width: 690px;
-    height: 600px;
-    max-height:100vh;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform:translate3d(-50%,-50%,0);
-    overflow:hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  #spinner img:nth-child(1) { transform:rotateY(0deg); }
+  #spinner img:nth-child(2) { transform: rotateY(-45deg); }
+  #spinner img:nth-child(3) { transform: rotateY(-90deg); }
+  #spinner img:nth-child(4) { transform: rotateY(-135deg); }
+  #spinner img:nth-child(5){ transform: rotateY(-180deg); }
+  #spinner img:nth-child(6){ transform: rotateY(-225deg); }
+  #spinner img:nth-child(7){ transform: rotateY(-270deg); }
+  #spinner img:nth-child(8){ transform: rotateY(-315deg); }
+
+
+  #carousel ~ span { 
+    color: #fff; 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    font-size: 2rem; 
+    transition: 0.6s color; 
+    position: relative; 
+    margin-top: -6rem; 
+    border-bottom: none; 
+    line-height: 0; 
   }
-  
-  
-  /* Our image information */
-  .bottom,
-  .middle,
-  .top {
-    width:100%;
-    height:100%;
-    background-repeat:no-repeat;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top:0;
-    left:0;
-    pointer-events:none;
-    overflow: hidden;
+  #carousel ~ span:hover { 
+    color: #888; cursor: pointer; 
   }
-    .top img {
-      height:100%;
-    }
-  
-  
-  .bottom{
-    background: black;
+
+  #bouton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:1em;
+    line-height: 1em;
   }
-  .middle {
-    background:  black;
+
+  .bouton {
+    color: white;
+    text-decoration: none;
   }
-  .top{
-    background:  black;
-  }
-  
-  .top{
-    width:125px;
-  }
-  
-  .scroller{
-    width: 50px;
-    height:50px;
-    position: absolute;
-    left:100px;
-    top:50%;
-    transform:translateY(-50%);
-    border-radius:50%;
-    background-color: #fff;
-    opacity:0.9;
-    transition: opacity 0.12s ease-in-out;
-    pointer-events:auto;
-    cursor: pointer;
-    box-shadow: 3.5px 0px 7px rgba(100, 100, 100, 0.2);
-  }
-  .scroller-middle{
-    margin-top:25px;
-  }
-  .scroller-top{
-    margin-top:-25px;
-  }
-  
-  
-  .scroller:hover{
-    opacity:1;
-  }
-  
-  .scrolling{
-    pointer-events:none;
-    opacity:1;
-    /* z-index: 1;*/
-  }
-  
-  .scroller__thumb{
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    padding: 7px;
-  }
-  
-  .scroller:before,
-  .scroller:after{
-    content:" ";
-    display: block;
-    width: 7px;
-    height: 9999px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3.5px;
-    z-index: 30;
-    transition:0.1s;
-    box-shadow: 3.5px 0px 7px rgba(100, 100, 100, 0.2);
-  }
-  .scroller:before{
-    top:49px;
-  }
-  .scroller:after{
-    bottom:49px;
-  }
-  
-  /* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
-  .scroller-middle>.scroller__thumb{
-    border: 5px solid black;
-  }
-  .scroller-middle:before,
-  .scroller-middle:after{
-    background: white;
-    border: 1px solid black;
-  }
-  
-  .scroller-top>.scroller__thumb{
-    border: 5px solid black;
-  }
-  .scroller-top:before,
-  .scroller-top:after{
-    background: white;
-    border: 1px solid black;
+
+  .bouton:hover {
+    color: #888; cursor: pointer; 
+    text-decoration: none;
   }
 
   /*TITRE*/
@@ -190,7 +107,7 @@ body{
     letter-spacing: 20px;
     margin: auto;
     width: 100%;
-    filter: blur(3px);
+    filter: blur(0px);
     cursor: none;
     overflow: hidden;
     text-align: center;
@@ -213,7 +130,6 @@ body{
 }
 
 .container {
-	position: absolute;
 	height: 15vh;
 	padding-top: 3em;
 	width: 100%;
@@ -233,11 +149,9 @@ body{
     bottom:2em;
   }
 
-  .noHide{
-    filter: blur(2px);
-  }
-  .noHide:hover{
-    filter: blur(0px);
+
+  .noHide a:hover{
+    color: grey;
   }
   
   .footer ul {
@@ -270,3 +184,30 @@ body{
     width: 2em;
   }
   
+/*CONTACT*/
+#contenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50%;
+  width: 100%;
+}
+
+.itemContenuImage{
+  border: 1px white solid;
+  width: 30%;
+  background-image: url('../images/profil.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.itemContenu{
+  border: 1px white solid;
+  width: 30%;
+  background-image: url('../images/Home.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
